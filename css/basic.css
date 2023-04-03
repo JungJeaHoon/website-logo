@@ -1,0 +1,661 @@
+@charset "UTF-8";
+body {font-family: "Lato", sans-serif;}
+a {text-decoration: none; color:#000;}
+
+/********************main*********************/
+
+header { width: 100%;position: relative; }
+
+.main {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 44px; 
+    z-index: 1;   
+    position: fixed;
+}
+.main .main_nav:hover {    
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    z-index: 1;
+    width: 100%;
+    height: 47px; 
+}
+.main .main_nav::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+.main .ham {
+    display: none;
+}
+.main .main_icon {
+    line-height: 44px;
+    display: block;
+    float: left;
+    margin-left:20px;    
+}
+.main .main_icon li{
+    display: inline-block;
+    padding: 0 16px;     
+    line-height: 42px; 
+}
+.main .main_icon li:hover {
+    background: #d4d3d3;
+    overflow: hidden;
+    
+}
+.main .main_icon li a {
+    color: #777;
+    font-size: 15px;
+}
+.main .search {
+    float:right;
+    line-height: 44px;
+    margin:0 10px 10px 0;
+    text-align: center;
+}
+.main .search a {
+    color: #777;
+    display: block;
+    width: 40px;    
+}
+.main .search a:hover {
+    color: #fff;
+    background-color: #f44336
+}
+.My {position: relative;}
+.My .main_img {
+    background: url('../img/parallax1.jpg')fixed no-repeat 
+    center center / cover;
+    width: 100%;
+    opacity: 0.75;
+    height: 969px;
+}
+.My .main_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    font-size: 24px;
+    opacity: 0.7;
+}
+.My .main_text h1 {
+    padding: 15px;
+    background-color: #000;
+    color:#fff;
+    letter-spacing: 10px;
+}
+
+/*******************section1*************************/
+
+.sec1 {
+    width: 950px;
+    margin:30px auto;
+    color:#777;    
+    padding:70px 0 30px 0;
+}
+.sec1 .about em {
+    display: block;
+    text-align: center;
+    margin:20px 0;
+    font-style: italic;
+}
+.sec1 .about h3 {
+    text-align: center;
+    font-size: 24px;
+}
+.sec1 .about p:last-child {
+    letter-spacing: 2;
+    line-height: 140%;
+}
+.sec1 .about2 {
+    display: flex; 
+    margin: 60px 0;       
+}
+.sec1 .about2 .name {    
+    padding: 10px;  
+    display: inline-block;
+    text-align: center;    
+}
+.sec1 .about2 .name p {
+    padding: 15px 0;
+    font-size: 13px;
+    font-weight: bold;    
+}
+.sec1 .about2 .name p > i {
+    margin-right: 7px;
+}
+.sec1 .about2 .name img {
+    width: 426px;
+    height: 288px;
+    opacity: 0.7;
+}
+.sec1 .about2 .name_text {    
+    padding: 10px 10px 10px 25px; 
+    display: inline-block;
+    letter-spacing: 2;
+    line-height: 140%;
+
+}
+
+/*******************section2*************************/
+
+
+.sec2 {
+    width: 950px;
+    margin:0 auto;
+    color:#777;    
+    padding:0 0 30px 0;    
+    opacity:0.8;
+}
+.sec2 .sec2_bar .sec2_good {
+    display: block;
+    text-align: center;    
+    font-size:18px;    
+}
+.sec2 .sec2_bar > div {
+    background-color: #f0eded;
+    margin: 20px 0;
+    height: 35px;
+    color:#fff;
+}
+.sec2 .sec2_bar > .d90  .bar_color90 {
+    width: 90%;
+    background:#424141;
+    text-align:center;
+    line-height: 35px;
+}
+.sec2 .sec2_bar > .d85  .bar_color85 {
+    width: 85%;
+    background:#424141;
+    text-align:center;
+    line-height: 35px;
+}
+.sec2 .sec2_bar > .d75  .bar_color75 {
+    width: 75%;
+    background:#424141;
+    text-align:center;
+    line-height: 35px;
+}
+.sec2 .sec2_bar .sec2_txt {
+    letter-spacing:6px;
+    font-size:15px;
+}
+.sec2 .sec2_bar .sec2_txt i {
+    margin-right:10px;
+}
+
+
+/*******************section3*************************/
+
+.sec3 {
+    width: 100%;    
+    background:#616161;
+    opacity:0.8;
+    margin: 30px 0 0;
+}
+.sec3 .sec_container {    
+    height:135px;
+    position:relative;        
+    overflow: hidden;   
+    padding-top: 30px ; 
+}
+.sec3 .sec_container >div {    
+    
+    color:#fff; 
+    width: 24.999%;
+    text-align:center;
+    height:135px;
+    float: left;   
+}
+.sec3 .sec_container >div>p>span {
+    font-size: 24px;    
+}
+
+
+/*******************section4*************************/
+
+.sec4 {
+    width: 100%;
+    height: 400px; 
+    position:relative;   
+}
+.sec4 .bg_img {
+    background: url('../img/parallax2.jpg')fixed no-repeat 
+    center center / cover;
+    width: 100%;  
+    min-height: 400px;
+    opacity: 0.75;
+}
+.sec4 > .bg_img > .bg_img_text {
+    position:absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.sec4 > .bg_img > .bg_img_text > span {
+    display: block;
+    color: #fff;
+    letter-spacing: 10px;
+    font-size:36px;
+}
+
+/*******************section5*************************/
+
+.sec5 {
+    width: 950px;
+    height: 770px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin:auto;    
+    overflow: hidden;
+}
+.sec5 .sec5_work .sec5_txt {
+    text-align:center;
+    color:#616161;
+}
+.sec5 .sec5_work  .sec5_txt > h3 {
+    font-size: 24px;
+}
+.sec5 .sec5_work  .sec5_txt> p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+.sec5 .sec5_work  .sec5_txt > p > em {
+    font-style: italic;
+} 
+.sec5 .sec5_work_img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.sec5 .sec5_work_img > div {
+    display: inline-block;
+    width: 24.5%;
+    height: 50%;
+    overflow: hidden;
+    padding: 10px 8px;
+}
+.sec5 .sec5_work_img >div > img{    
+    display: inline-block;    
+}
+
+.sec5 .sec5_work >button {
+    display: block;
+    text-align: center;
+    margin:auto;
+    padding: 15px;
+    background: #e8e4e4;
+    margin-top: 50px;
+    border: none;
+    letter-spacing: 2.4px;
+}
+
+/*******************section6*************************/
+
+.sec6 {
+    width: 100%;
+    height: 400px; 
+    position:relative;   
+}
+.sec6 .bgimg {
+    background: url('../img/parallax3.jpg')fixed no-repeat 
+    center center / cover;
+    width: 100%;  
+    min-height: 400px;
+    opacity: 0.75;
+}
+.sec6 > .bgimg > .bgimg_txt {
+    position:absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.sec6 > .bgimg > .bgimg_txt > span {
+    display: block;
+    color: #fff;
+    letter-spacing: 10px;
+    font-size:36px;
+}
+
+/*******************section7*************************/
+
+.sec7 {    
+    width: 950px;
+    margin:auto;
+    overflow: hidden;
+    margin-top: 64px;
+    margin-bottom: 15px;
+    color:#727171;
+}
+
+.sec7 .sec7_con .sec7_txt {
+    text-align:center;
+}
+.sec7 .sec7_con h3 {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    font-size: 24px;    
+}
+.sec7 .sec7_con .txt_p {
+    margin-bottom: 50px;
+}
+.sec7 .sec7_con .sec7_txt > p > em {
+    font-style: italic;
+}
+.sec7 .sec7_con .sec7_img {
+    float:left;
+    overflow:hidden;
+    width: 284px;
+    height: 160px;
+}
+.sec7 .sec7_con .sec7_img img {
+    width: 100%;
+}
+
+.sec7 .sec7_con .sec7_co2 .sec7_icon {
+    margin-left:30px;
+    display: inline-block;
+}
+.sec7 .sec7_con .sec7_co2 .sec7_icon > i {
+    margin-right:16px;
+    font-size: 24px;
+}
+.sec7 .sec7_con .sec7_co2 .sec7_icon > i,p {
+    margin-top:6px;
+    margin-bottom:6px;
+}
+.sec7 .sec7_con .sec7_co2 .sec7_icon > p {
+    font-size:15px;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+.sec7 .sec7_con .sec7_co2 form {    
+    margin-top:10px;
+    width: 640px;
+    height: 100px;
+    float:right;
+}
+.sec7 .sec7_con .sec7_co2 form .sec7_fo {
+    display:flex;    
+}
+.sec7 .sec7_con .sec7_co2 form .sec7_fo .form_name {
+    width: 50%;    
+}
+.sec7 .sec7_con .sec7_co2 form .sec7_fo .form_name > input {
+    padding: 12px;
+    border: 1px solid #ccc8c8;
+    width: 90%;
+    margin-right: 10px;
+    font-size:15px;
+}
+.sec7 .sec7_con .sec7_co2 form .sec7_fo .form_email {
+    width: 50%;
+}
+.sec7 .sec7_con .sec7_co2 form .sec7_fo .form_email > input {
+    padding: 12px;
+    border: 1px solid #ccc8c8;
+    width: 90%;
+    float:right;
+    font-size:15px;
+}
+.sec7_form_message {
+    width: 100%;
+    height: 45px;
+    overflow: hidden;
+    margin-top: 10px;
+    
+}
+.sec7_form_message > input {
+    padding: 12px 0;
+    width: 637px;
+    border: 1px solid #ccc8c8;
+    font-size:15px;     
+}
+.sec7_btn {
+    position: relative;
+    width: 950px;
+    margin:auto;
+    height: 42px;    
+}
+.sec7_btn > button {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    font-size:15px;      
+}   
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: 289px;
+    background: #666;
+    text-align: center;   
+    margin-top: 60px;  
+    position: relative;   
+}
+footer:hover {
+    background: #000;
+}
+footer .to_top {
+    position: absolute;
+    top: -60px;
+}
+footer .to_top > a {
+    color: #666;;
+    background:#fff;
+    padding: 10px 20px;    
+}
+footer .to_top > a > i { 
+    color: #666;;
+}
+footer .foot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+footer .foot i {
+    color: #fff;
+    font-size: 19px;
+    letter-spacing: -1;
+}
+footer p {
+    color: #fff;
+    margin-top: 20px;
+}
+footer p > a {
+    color:#fff;
+    text-decoration:underline;
+}
+
+
+
+/*모바일 500*/
+
+@media(max-width:600px){
+
+    .main {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 44px; 
+        z-index: 1;   
+        position: fixed;
+        background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+
+    }
+.hide_small {
+    display: none;
+}
+.main .main_nav:hover {
+    display: none;
+}
+.main .main_icon li > a {
+    display: none;
+}
+.main .main_icon li > .nav_btn {
+    display: inline-block;
+    padding:0 8px ;
+    margin-left: 0;
+    margin-top: 0; 
+    
+}
+/* .main .main_icon li > .nav_btn:hover {
+    background: #777;
+    color: #000;
+} */
+
+.main .ham {
+    display: block;
+    float: right;
+    color: #777;
+}
+.main .ham i {
+    font-size: 18px;
+}
+.main .search a {
+    display: none;
+}
+.sec1  {
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    
+}
+.sec1 .about2 {
+    text-align: center; 
+    width: 100%;
+    height: 500px;
+    margin-bottom:0;
+    
+}
+.sec1 .about2 > .name {
+    width: 100%;
+}
+.sec1 .about2 .name p {
+    display: block;
+}
+
+.sec1 .about2 .name img {
+    width: 560px;
+    height: auto;
+    opacity: 0.7;
+    border-radius: 4px;
+}
+
+/*section2*/
+
+.sec2 {
+    width: 600px;
+}
+.sec2 .sec2_bar {
+    padding: 20px 30px 0 20px;
+}
+.sec2 .sec2_bar .sec2_good {
+    margin-bottom: 40px;;
+}
+
+/*section3*/
+
+.sec3 {
+    width: 600px;
+    height: 540px;
+}
+.sec3 .sec_container {
+    text-align: center;
+    height: 540px;
+    color:#616161;
+}
+.sec3 .sec_container >div {
+    width: 100%;
+}
+.sec3 .sec_container >div>p {
+    display: inline-block;
+}
+
+/*section5*/
+
+.sec5 {
+    width: 600px;
+    height: auto;    
+}
+.sec5 .sec5_work .sec5_work_img {
+    height: auto;
+    width: 100%;    
+}
+
+.sec5 .sec5_work_img > div {
+    display: inline-block;
+    width: 100%;    
+    overflow: hidden;
+    padding: 0px 8px;
+}
+.sec5 .sec5_work_img > div >img {
+    width: 100%;    
+}
+
+/*section7*/
+
+.sec7 {
+    width: 600px;
+}
+.sec7 .sec7_con .sec7_img  {
+    width: 100%;
+    height:auto;
+    text-align: center;
+    margin: auto;
+    float: none;
+}
+.sec7 .sec7_con .sec7_co2  {
+    width: 90%;
+    padding-left: 0;
+    margin: auto;    
+}
+.sec7 .sec7_con .sec7_co2 .sec7_icon {
+    margin-left: 0;
+    margin-top:20px;
+}
+.sec7 .sec7_con .sec7_co2 form {
+    width: 100%;
+    height: auto;    
+}
+.sec7 .sec7_con .sec7_co2 form .sec7_fo {
+    flex:none;
+    display: block;    
+}
+.sec7 .sec7_con .sec7_co2 form .sec7_fo .form_name {
+    width: 100%;
+}
+.sec7 .sec7_con .sec7_co2 form .sec7_fo .form_name > input{
+    margin-right: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+}
+.sec7 .sec7_con .sec7_co2 form .sec7_fo .form_email{
+    width: 100%;
+}
+.sec7 .sec7_con .sec7_co2 form .sec7_fo .form_email > input{
+    margin-left: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+}
+.sec7_btn {     
+    width: 550px;
+    margin:auto;
+}
+
+
+}
